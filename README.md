@@ -5,7 +5,7 @@ This is a guide through my repository :)<br>
 *Now*, for the files in the repository:
 <h3>-index.html and style.css for the code of my portfolio website.<br>
 -images are my pfps used in the website as well.<br>
--A CV file both pdf and tex file.
+-A CV file both pdf and tex file.<br>
 -A Report both in pdc and tex file.
 
 thank you for reading ^_^<br>
