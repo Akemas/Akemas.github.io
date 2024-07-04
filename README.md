@@ -20,8 +20,7 @@ Ahmed Mohammed
 
 1 Introduction
 This report is to showcase my experiences during the making of
-my CS Portfolio. Reasons for certain designs, references and im-
-provements will be elaborated.
+my CS Portfolio. Reasons for certain designs, references and improvements will be elaborated.
 
 
 2 Goal
