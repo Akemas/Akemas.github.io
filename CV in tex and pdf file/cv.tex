@@ -1,0 +1,161 @@
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Ahmed Mohammed} \\[7.5pt]
+\href{https://github.com/Akemas}{\raisebox{-0.05\height}\faGithub\ Akemas} \ $|$ \ 
+\href{mailto:email@mysite.com}
+{\raisebox{-0.05\height}\address{Taubenbogen 8 14476 Potsdam}} \ $|$ \ 
+\href{mailto:email@mysite.com}
+{\raisebox{-0.05\height}\faEnvelope \ akemas.20@gmail.com} \ $|$ \ 
+\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +49 173 4257745} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Summary
+\section{Summary}
+An affable CS student aspiring to become a successful engineer and work on app development projects.
+
+%Experience
+\section{Work Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Self Employment} & \hfill Jan 2018 - present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Helped clients in making professional presentations as well as CVs and other document-related projects.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Infomedia} & \hfill March 2021 - April 2021 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Pc and laptop advisor
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[]
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Windpower model} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{[ 2018 ] 
+Grade 10 (2 semesters) 
+I made a model in a science exhibition to demonstrate the use of wind power and 
+engine-generated electricity to solve electricity problems. (Electricity shortage is a big problem in 
+my home country) I was recognized by the special guests of my school and praised 
+by my classmates, teachers and the principal.}  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2023 - present & Bsc Computer science at \textbf{GISMA University of Applied Sciences} \hfill \\
+
+2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+
+2022 & Class 12th Some Board \hfill  (Grades) \\
+
+2021 & Class 10th Some Board \hfill  (Grades) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{itemize}
+    \item Strong communication
+    \item Microsoft applications(specially Powerpoint)
+    \item Punctual
+    \item  Flexible
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	Languages
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\begin{itemize}
+    \item Mother tongue: Arabic
+    \item English: C1
+    \item German: B2
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{References}
+\begin{itemize}
+    \item \textbf{Mr Jimmy George} (Principle of MGIS) Jimmy226189@gmail.com
+    \item \textbf{Mrs Gehan Adam}  (Office Director AMIDEAST)  
+\end{itemize}
+\end{document}
