@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta http.equv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+    <!-- Home -->
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science student Portfolio</p>
+            <h1>Ahmed Mohammed</h1>
+        </div>
+    </div>
+</div>
+
+    <!--  About me -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/my profile picture.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+             <p class="me-text">I am a Student at gisma University in my first year of my BCS Computer Science Major. 
+                Despite my lack of experience, I am a very fast learner and willing to take new challenges. 
+                I also love working under stress as it brings the best of me.</p>
+                
+
+
+                <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p> 
+                   <p class="tab-links" onclick="opentab('Experience')">Experience</p> 
+                   <p class="tab-links" onclick="opentab('Education')">Education</p> 
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Powerpoint presentations</span><br>Designing professional Powerpoints for businesses</li><br>
+                        <li><span>web development</span><br>making aesthetic websites</li><br>
+                        <li><span>3 languages</span><br>Speaks German(B2), English(C1) and Arabic(Mother tongue)</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Projects</span><br>I did a lot of professional powerpoints as a way to enchance my skills</li><br>
+                        <li><span>web development</span><br>made some test websites to learn new functions and features like the 
+                            hover feature,switching tabs and the for function in Java used in this portfolio</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Oct 2023 - Now </span><br>Gisma UNiversity Bcs Computer science</li><br>
+                        <li><span>August 2020 - Febraury 2023 </span><br>Learned German up to B2</li><br>
+                        <li><span>June 2020 - Sep 2023 </span><br>Business English course</li><br>
+                        <li><span> 2005 - Mar 2023 </span><br>School and highschool</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Information -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactme">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>akemas.20@gmail.com</p>
+                <p>+49 173 4257745</p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+</body>
+</html>
